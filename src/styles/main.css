@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-@import './main/mixins';
-@import './main/variables';
+@import './defaults/mixins';
+@import './defaults/variables';
+@import './defaults/animations';
+@import './main/asterisk';
 @import './main/body';
-@import './head/header';
+@import './head/header.sass';

@@ -1,0 +1,33 @@
+
+.header
+	background: $sectionBGColor
+	padding: $sectionPadding
+	box-shadow: $sectionBorder
+	border: 1px solid $mainContrast
+	border-radius: 0 0 30px 30px
+
+	ul
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		font-size: 1.4em
+
+		@include phone
+			flex-direction: column
+			text-align: center
+			font-size: 1.6em
+		
+		li
+			list-style-type: none
+
+			@include phone
+				margin: .4em
+
+			a
+				color: $textColor
+				text-shadow: $textContrast
+				text-decoration: none
+
+			@include bigger-then-phone 
+				a:hover
+					animation: link 2s ease-in-out

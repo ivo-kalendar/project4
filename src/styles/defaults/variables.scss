@@ -1,7 +1,7 @@
 
 $mainBGColor: linear-gradient(to right, rgb(50, 39, 39), rgb(132, 30, 40));
 $mainColor: rgb(223, 232, 232);
-$mainTransparent: rgba(223, 232, 232, .3);
+$mainContrast: rgba(223, 232, 232, .3);
 $mainFont: 'Quicksand', sans-serif;
 
 $sectionPadding: 2em .5em;
@@ -9,4 +9,4 @@ $sectionBorder: -1px 3px 5px rgba(0,0,0, .5);
 $sectionBGColor: repeating-linear-gradient( 45deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0) 10px, rgba(255, 255, 255, 0) 10px, rgba(255, 255, 255, 0) 20px );
 
 $textColor: rgb(104, 154, 247);
-$textContrast: 5px 1.5px 5px rgba(0, 0, 0, .55);
+$textContrast: -2px 1.5px 1px rgba(0, 0, 0, .35), -4px 2.5px 4px rgba(0, 0, 0, .65), -6px 3.5px 4px rgba(0, 0, 0, .15);

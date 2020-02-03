@@ -5,4 +5,6 @@
 @import './main/asterisk';
 @import './main/body';
 @import './head/header.sass';
+@import './head/header.ul.li.sass';
 @import './head/images.sass';
+@import './head/logo.sass';

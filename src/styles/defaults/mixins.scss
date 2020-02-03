@@ -11,6 +11,10 @@
 	@media (min-width: 621px) and (max-width: 1200px) { @content; }
 }
 
+@mixin bigger-then-tablet {
+	@media (min-width: 821px) { @content; }
+}
+
 @mixin pc {
 	@media (min-width: 1201px) { @content; }
 }

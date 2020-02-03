@@ -1,0 +1,25 @@
+.logo
+	position: absolute
+	width: auto
+	padding: .1em
+	background: $sectionBGColor
+	margin: 1.5em 50%
+	transform: translate(-50%)
+	box-shadow: $sectionBorder
+	border: 1px solid $mainContrast
+	border-radius: 30px
+	text-align: center
+	font-size: 6em
+	font-weight: 700
+	color: $textColor1
+	text-shadow: $textContrast
+
+	@include phone
+		margin: .3em 50%
+		font-size: 5em
+
+	@include pc
+		margin: 2.2em 50%
+
+	@include bigger-then-tablet
+		margin: 2.7em 50%

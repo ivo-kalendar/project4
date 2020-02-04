@@ -1,0 +1,25 @@
+.primary-nav__list li
+	list-style-type: none
+
+	@include phone
+		margin: .3em
+
+	a
+		display: inline-block
+		padding: .2em
+		color: $textColor1
+		text-shadow: $textContrast
+		text-decoration: none
+		border: 3px solid transparent
+		border-radius: 10px
+
+	@include bigger-then-phone 
+		a
+			transition: border .5s, color .5s, transform .5s
+			
+		a:hover
+			border: 3px solid $btnColor2
+			color: $textColor2
+			transform: scale(1.15)
+			transition: border .1s, color .1s, transform .1s
+			// animation: $link

@@ -8,15 +8,30 @@
 		<link rel="stylesheet" type="text/css" href="/main-bundle.css">
 	</head>
 	<body>
-		<nav>
-			<div class="header header--inactive">
-				<ul>
-					<li><a href="<%= root %>">main</a></li>
-					<li><a href="<%= root %>">some stuff</a></li>
-					<li><a href="<%= root %>">some other stuff</a></li>
-					<li><a href="<%= root %>">about</a></li>
-					<li><a href="<%= root %>">test</a></li>
-				</ul>
+		<header class="site-header">
+			<div class="wrapper">
+				<div class="site-header__logo">Enjoy</div>
+
+				<div class="burger-menu"></div>
+
+				<div class="site-header__menu-content">
+					<div class="site-header__btn-container">
+						<!-- <a href="#" class="btn btn-modal">Get in Touch</a> -->
+					</div>
+					
+					<div class="site-header__menu-icon">
+				        <div class="site-header__menu-icon__middle"></div>
+				    </div>
+
+					<nav class="primary-nav primary-nav--is-visible">
+						<ul class="primary-nav__list">
+							<li><a href="<%= root %>">main</a></li>
+							<li><a href="<%= root %>">some stuff</a></li>
+							<li><a href="<%= root %>">some other stuff</a></li>
+							<li><a href="<%= root %>">about</a></li>
+							<li><a href="<%= root %>">test</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
-		</nav>
-		<div class="logo">Enjoy</div>
+		</header>

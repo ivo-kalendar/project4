@@ -1,1 +1,40 @@
-_primary-nav__inactive.sass
+
+.site-header__menu-icon
+
+	@include phone
+		background: $sectionBGColor
+		height: 26px
+		width: 12%
+		position: absolute
+		margin: 10em auto auto 83%
+		box-shadow: $sectionBorder
+		border-radius: 3px
+
+		&::before
+			position: absolute
+			content: ''
+			background-color: $textColor1
+			box-shadow: $textContrast
+			top: 0
+			height: 6px
+			width: 100%
+			border-radius: 5px
+
+		&__middle
+			position: absolute
+			background-color: $textColor1
+			box-shadow: $textContrast
+			height: 6px
+			width: 100%
+			border-radius: 5px
+			top: 10px
+
+		&::after
+			position: absolute
+			content: ''
+			background-color: $textColor1
+			box-shadow: $textContrast
+			top: 20px
+			height: 6px
+			width: 100%
+			border-radius: 5px

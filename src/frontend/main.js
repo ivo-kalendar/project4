@@ -7,3 +7,6 @@ require('../views/includes/footer.ejs')
 require('../views/includes/hero-image.ejs')
 
 require('../styles/main.css')
+
+import MobileMenu from './modules/MobileMenu'
+new MobileMenu().events()

@@ -10,25 +10,8 @@
 	padding-top: 3em
 	opacity: 0
 	z-index: -10
-	// transform: scale(1)
-	// transition: all 1.5s ease-out
-
-	@include bigger-then-phone
-		opacity: 1
-		z-index: 1
-		padding-top: 1.5em
-		// transform: scale(1)
-
-	&--is-visible
-		opacity: 1
-		z-index: 1
-		padding-top: 1.5em
-
-		& ul li a
-
-			@include phone
-				transform: scale(1)
-			
+	transform: scale(1)
+	transition: all .3s ease-in-out
 
 	&__list
 		display: flex
@@ -36,15 +19,40 @@
 		justify-content: space-around
 		font-size: 1.3em
 
+		& li
+			overflow: hidden
+
+			@include bigger-then-phone
+				overflow: visible
+
+		& li a
+			transform: scale(10)
+			transition: transform .4s ease-in-out
+
 		@include phone
 			margin-top: 6em
 			flex-direction: column
 			text-align: center
-			font-size: 1.3em	
+			font-size: 1.3em
 
-		& li a
-			transform: scale(2)
-			transition: transform .3s ease-in-out
+	@include bigger-then-phone
+		&--on-load
+			opacity: 1
+			z-index: 1
+			padding-top: 1.5em
+			transform: scale(1)
+			overflow: hidden
 
-			@include bigger-then-phone
+			& li a
 				transform: scale(1)
+
+	@include phone
+		&--is-visible
+			opacity: 1
+			z-index: 1
+			padding-top: 1.5em
+			transform: scale(1)
+
+			& ul li a
+				transform: scale(1)
+

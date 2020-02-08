@@ -1,0 +1,48 @@
+
+.primary
+	position: relative
+
+	&__menu-icon
+		@include phone
+			position: absolute
+			margin: 28vh 0 0 75vw
+			z-index: 4
+
+			&__wrapper
+				width: 20vw
+				height: 56px
+				display: block
+				z-index: 5
+
+			&__before
+				position: absolute
+				background: $textColor1
+				height: 4px
+				width: 40px
+				left: 15px
+				top: 10px
+				box-shadow: $textContrast
+				transition: transform .3s ease-in-out, background 2s
+				transform-origin: 0
+
+			&__middle
+				position: absolute
+				background: $textColor1
+				height: 4px
+				width: 30px
+				left: 15px
+				top: 20px
+				box-shadow: $textContrast
+				transition: transform .3s ease-in-out
+				transform-origin: 0
+
+			&__after
+				position: absolute
+				background: $textColor1
+				height: 4px
+				width: 40px
+				top: 30px
+				left: 15px
+				box-shadow: $textContrast
+				transition: transform .3s ease-in-out, background 2s
+				transform-origin: 0

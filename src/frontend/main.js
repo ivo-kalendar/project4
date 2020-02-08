@@ -8,5 +8,5 @@ require('../views/includes/hero-image.ejs')
 
 require('../styles/main.css')
 
-import MobileMenu from './modules/MobileMenu'
-let mobileMenu = new MobileMenu()
+// import OnLoad from './modules/_OnLoad'
+import MobileMenu from './modules/_MobileMenu'

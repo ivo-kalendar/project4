@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import './base/_mixins';
 @import './base/_variables';
-@import './base/_animations';
 @import './base/_asterisk';
 @import './base/_body';
 @import './base/_images.sass';
-@import './modules/_primary-nav.sass';
-@import './modules/_primary-nav__list.sass';
-@import './modules/_site-header__menu-icon.sass';
-@import './modules/_site-header__logo.sass';
+@import './modules/_site-header.sass';
+@import './modules/_primary__menu-icon.sass';
+@import './modules/_primary__nav.sass';
+@import './modules/_is-visible.sass';

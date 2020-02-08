@@ -5,19 +5,23 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title><%= title %></title>
-		<link rel="stylesheet" type="text/css" href="/main-bundle.css">
+		<!-- <link rel="stylesheet" type="text/css" href="/main-bundle.css"> -->
 	</head>
 	<body>
 		<header class="site-header">
 			<div class="site-header__logo">Enjoy</div>
 
 			<div class="site-header__menu-content">
-				<div class="site-header__menu-icon">
-			        <div class="site-header__menu-icon__middle"></div>
+				<div class="primary__menu-icon">
+					<div class="primary__menu-icon__wrapper">
+			        	<div class="primary__menu-icon__before"></div>
+			        	<div class="primary__menu-icon__middle"></div>
+			        	<div class="primary__menu-icon__after"></div>
+					</div>
 			    </div>
 
-				<nav class="primary-nav">
-					<ul class="primary-nav__list">
+				<nav class="primary__nav">
+					<ul class="primary__nav__list">
 						<li><a href="<%= root %>">main</a></li>
 						<li><a href="<%= root %>">some stuff</a></li>
 						<li><a href="<%= root %>">some other stuff</a></li>

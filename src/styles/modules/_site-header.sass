@@ -1,0 +1,33 @@
+
+.site-header
+	position: relative
+
+
+	&__logo
+		position: absolute
+		padding: 2vh 2vw
+		margin: 35vh 50%
+		transform: translate(-50%)
+		background: $sectionBGColor
+		font-size: 8vw
+		font-weight: 600
+		color: $textColor1
+		border: 1px solid $mainContrast
+		border-radius: 40px
+		box-shadow: $textContrast
+		text-shadow: $textContrast
+
+		@include phone
+			margin: 7vh 50%
+			padding: 2vh 5vw
+			font-size: 16vw
+			border-radius: 20px
+
+		@include tablet
+			margin: 25vh 50%
+			padding: 2vh 20vw
+			border-radius: 30px
+
+
+	&__menu-content
+		// position: absolute

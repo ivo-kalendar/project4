@@ -1,0 +1,25 @@
+
+.primary__menu-icon__wrapper--is-visible .primary__menu-icon
+	@include phone
+
+		&__before
+			transform: rotate(29deg)
+			transform-origin: 0
+			background: $textColor2
+
+		&__middle
+			transform: scale(0)
+			transform-origin: 0
+
+		&__after
+			transform: rotate(-29deg)
+			transform-origin: 0
+			background: $textColor2
+
+.primary__nav--is-visible
+
+	@include phone
+		opacity: 1
+		z-index: 1
+		left: 0
+		transform: translateY(-0)

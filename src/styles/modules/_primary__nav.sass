@@ -1,0 +1,51 @@
+
+.primary
+
+	&__nav
+		width: 100%
+		position: absolute
+		font-size: 3vw
+
+		@include pc
+			font-size: 2vw
+
+		@include bigger-then-phone
+			background: $sectionBGColor
+			border: 1px solid $mainContrast
+			border-radius: 0 0 30px 30px
+			box-shadow: $textContrast
+
+		@include phone
+			// display: none
+			z-index: -1
+			font-size: 10vw
+			opacity: 0
+			top: 30vh
+			left: 0
+			text-align: center
+			transform: translateY(-150%)
+			transition: all .3s ease-in-out
+
+		&__list
+			@include bigger-then-phone
+				display: flex
+				justify-content: space-around
+				margin: 20px 0
+
+			& li
+				display: inline-block
+				text-shadow: $textContrast
+
+				@include phone
+					display: block
+					padding: 10px
+					
+				& a
+					@include bigger-then-phone
+						padding: 7px
+						border: 1px solid transparent
+						border-radius: 15px
+
+						&:hover
+							color: $textColor2
+							border: 1px solid $btnColor2

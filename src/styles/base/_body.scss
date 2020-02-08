@@ -1,9 +1,16 @@
 
 body {
-	background: $mainBGColor;
-	// background: #fff;
+	// background: $mainBGColor;
 	color: $mainColor;
 	font-family: $mainFont;
 	font-size: 1rem;
-	overflow-X: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: $textColor1;
+}
+
+li {
+	list-style-type: none;
 }

@@ -1,0 +1,59 @@
+
+$visible: visible 3s forwards;
+$before: before 1s forwards;
+$middle: middle 1s forwards;
+$after: after 1s forwards;
+$beforeTooLong: beforeTooLong 5s infinite;
+$middleTooLong: middleTooLong 5s infinite;
+$afterTooLong: afterTooLong 5s infinite;
+$elogoAfter3s: logoAfter3s 5.1s infinite;
+$jlogoAfter3s: logoAfter3s 5s infinite;
+
+@keyframes visible {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes before {
+	from {left: 0;}
+	to {left: 15px;}
+}
+
+@keyframes middle {
+	from {top: 50px;}
+	to {top: 20px;}
+}
+
+@keyframes after {
+	from {left: 30px;}
+	to {left: 15px;}
+}
+
+@keyframes beforeTooLong {
+	0% {width: 40px;}
+	85% {width: 40px;}
+	86% {width: 50px;}
+	100% {width: 40px;}
+}
+
+@keyframes middleTooLong {
+	0% {width: 30px;}
+	90% {width: 30px;}
+	91% {width: 50px;}
+	100% {width: 30px;}
+}
+
+@keyframes afterTooLong {
+	0% {width: 40px;}
+	80% {width: 40px;}
+	81% {width: 50px;}
+	100% {width: 40px;}
+}
+
+@keyframes logoAfter3s {
+	0% {color: $textColor1;}
+	80% {color: $textColor1;}
+	81% {color: $textColor3;}
+	90% {color: $textColor2;}
+	100% {color: $textColor1;}
+}

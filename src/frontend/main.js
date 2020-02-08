@@ -8,5 +8,5 @@ require('../views/includes/hero-image.ejs')
 
 require('../styles/main.css')
 
-// import OnLoad from './modules/_OnLoad'
+import OnLoad from './modules/_OnLoad'
 import MobileMenu from './modules/_MobileMenu'

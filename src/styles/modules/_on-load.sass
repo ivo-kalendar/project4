@@ -2,11 +2,17 @@
 .site-header__logo--on-load, .primary__menu-icon--on-load
 	animation: $visible
 
-.site-header__logo--after-3s .e
-	animation: $elogoAfter3s
-
-.site-header__logo--after-3s .j
-	animation: $jlogoAfter3s
+.site-header__logo--after-3s span
+	&:nth-child(odd)
+		animation: $char1
+	&:nth-child(even)
+		animation: $char3
+	&:nth-child(3)
+		animation: $char2
+	&:nth-child(1)
+		animation: $char4
+	&:nth-child(6), &:nth-child(2)
+		animation: $char5
 
 .primary__menu-icon--on-load .primary__menu-icon__wrapper 
 	.primary__menu-icon__before

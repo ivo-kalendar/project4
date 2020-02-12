@@ -11,7 +11,14 @@ class OnLoad {
 			setTimeout(() => {
 				header.primary.menuIcon.classList.add('primary__menu-icon--after-3s')
 				header.logo.classList.add('site-header__logo--after-3s')
-			},3000)
+
+				header.logo.textContent.split('').map((el) => {
+					this.char = header.logo.innerHTML.replace(el, `<span>${el}</span>`)
+					console.log(this.char)
+					header.logo.innerHTML = this.char
+				}).join('')
+
+			}, 3000)
 		})
 	}
 }

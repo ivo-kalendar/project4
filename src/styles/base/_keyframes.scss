@@ -3,11 +3,16 @@ $visible: visible 3s forwards;
 $before: before 1s forwards;
 $middle: middle 1s forwards;
 $after: after 1s forwards;
+
 $beforeTooLong: beforeTooLong 5s infinite;
 $middleTooLong: middleTooLong 5s infinite;
 $afterTooLong: afterTooLong 5s infinite;
-$elogoAfter3s: logoAfter3s 5.1s infinite;
-$jlogoAfter3s: logoAfter3s 5s infinite;
+
+$char1: logoAfter3s 5s infinite;
+$char2: logoAfter3s 5.2s infinite;
+$char3: logoAfter3s 5.4s infinite;
+$char4: logoAfter3s 5.6s infinite;
+$char5: logoAfter3s 5.8s infinite;
 
 @keyframes visible {
 	from {opacity: 0;}

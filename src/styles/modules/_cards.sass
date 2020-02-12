@@ -1,2 +1,46 @@
+
 .main
-	background-color: red
+	background: $mainBGColor
+	padding: 1rem
+	display: grid
+	place-items: center
+
+	@include phone
+		grid-template-columns: repeat(1, auto)
+
+	@include tablet
+		grid-template-columns: repeat(2, auto)
+
+	@include pc
+		grid-template-columns: repeat(3, auto)
+
+	&__card
+		width: 95%
+		background: $cardBGColor
+		padding: 2rem
+		margin: 1rem auto
+		border: 1px solid black
+		border-radius: 0 60px 0 20px
+		text-shadow: $textContrast
+		box-shadow: $cardContrast
+		font-size: 1.2rem
+
+		@include bigger-then-phone
+			width: 85%
+			margin: 1rem
+			&:hover
+				color: $textColor2
+
+		@include bigger-then-tablet
+			width: 80%
+			margin: 2rem
+
+		@include pc
+			width: 80%
+			margin: 3rem
+
+		& h2
+			margin-bottom: 1rem
+
+		& p
+			line-height: 1.8rem

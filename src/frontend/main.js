@@ -5,6 +5,7 @@ require('../views/index.ejs')
 require('../views/includes/header.ejs')
 require('../views/includes/hero-image.ejs')
 require('../views/includes/cards.ejs')
+require('../views/includes/lorem.ejs')
 require('../views/includes/footer.ejs')
 
 require('../styles/main.css')

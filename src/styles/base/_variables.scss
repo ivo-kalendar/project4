@@ -7,14 +7,16 @@ $mainFont: 'Quicksand', sans-serif;
 $sectionPadding: 1.5em .5em;
 $sectionBorder: -1px 3px 5px rgba(0,0,0, .5);
 $sectionBGColor: repeating-linear-gradient( 45deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0) 10px, rgba(255, 255, 255, 0) 10px, rgba(255, 255, 255, 0) 20px );
-$cardBGColor: repeating-linear-gradient( 45deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .7) 10px, rgba(0, 0, 0, .8) 10px, rgba(0, 0, 0, .4) 20px );
 
 $textColor1: rgb(232, 130, 140);
 $textColor2: rgb(130, 207, 233);
 $textColor3: rgb(104, 154, 247);
 $textContrast: -2px 1.5px 1px rgba(0, 0, 0, .35), -4px 2.5px 4px rgba(0, 0, 0, .65), -6px 3.5px 4px rgba(0, 0, 0, .15);
-$cardContrast: -4px 3px 1px rgba(0, 0, 0, .25), -8px 5px 4px rgba(0, 0, 0, .45), -12px 7px 4px rgba(0, 0, 0, .15);
 
 $btnColor1: rgba(232, 130, 140, .4);
 $btnColor2: rgba(130, 207, 233, .1);
 $btnColor3: rgba(104, 154, 247, .4);
+
+$cardBGColor: repeating-linear-gradient( 45deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .7) 10px, rgba(0, 0, 0, .8) 10px, rgba(0, 0, 0, .4) 20px );
+$cardContrast: -4px 3px 10px rgba(0, 0, 0, .25), -8px 5px 10px rgba(0, 0, 0, .25), -16px 12px 10px rgba(0, 0, 0, .15);
+$loremContrast: -.5px .5px rgba(0, 0, 0, .85), -2px 2px 10px rgba(0, 0, 0, .25);

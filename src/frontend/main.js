@@ -10,5 +10,16 @@ require('../views/includes/footer.ejs')
 
 require('../styles/main.css')
 
+import vars from './modules/_variables'
 import OnLoad from './modules/_OnLoad'
 import MobileMenu from './modules/_MobileMenu'
+import OnScroll from './modules/_OnScroll'
+
+
+for (var i = 0; i < vars.mainAll.length; i++) {
+	new OnScroll(vars.mainAll[i])
+}
+
+for (var i = 0; i < vars.loremAll.length; i++) {
+	new OnScroll(vars.loremAll[i])
+}

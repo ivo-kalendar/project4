@@ -9,7 +9,6 @@
 	box-shadow: $sectionBorder
 
 	&__card
-		// width: 95%
 		max-width: 25rem
 		background: $cardBGColor
 		padding: 2rem
@@ -19,9 +18,11 @@
 		text-shadow: $textContrast
 		box-shadow: $cardContrast
 		font-size: 1.2rem
+		opacity: 0
+		transform: translateY(30%)
+		transition: all 1s ease-in-out
 
 		@include bigger-then-phone
-			// width: 85%
 			width: 44%
 			margin: 1rem
 			&:hover

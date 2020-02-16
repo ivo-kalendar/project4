@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 @import './base/_mixins';
 @import './base/_variables';
 @import './base/_root';
 @import './base/_keyframes';
+
 @import './modules/_site-header.sass';
 @import './modules/_primary__menu-icon.sass';
 @import './modules/_primary__nav.sass';
@@ -10,3 +12,4 @@
 @import './modules/_is-visible.sass';
 @import './modules/_cards.sass';
 @import './modules/_lorem.sass';
+@import './modules/_footer.sass';

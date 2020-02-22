@@ -8,9 +8,11 @@ const vars = {
 		nav: document.querySelector('.primary__nav')
 	},
 	main: document.querySelector('.main'),
-	mainAll: document.querySelector('.main').querySelectorAll('.main__card'),
+	// mainAll: document.querySelectorAll('section.main__card'),
 	lorem: document.querySelector('.lorem'),
-	loremAll: document.querySelector('.lorem').querySelectorAll('h1, p')
+	// loremAll: document.querySelectorAll('div.lorem p, div.lorem h1')
+	allVisible: document.querySelectorAll('section.main__card, div.lorem p, div.lorem h1')
 }
+
 
 export default vars

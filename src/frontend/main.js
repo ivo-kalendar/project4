@@ -16,10 +16,14 @@ import MobileMenu from './modules/_MobileMenu'
 import OnScroll from './modules/_OnScroll'
 
 
-for (var i = 0; i < vars.mainAll.length; i++) {
-	new OnScroll(vars.mainAll[i])
-}
+// for (var i = 0; i < vars.mainAll.length; i++) {
+// 	new OnScroll(vars.mainAll[i])
+// }
 
-for (var i = 0; i < vars.loremAll.length; i++) {
-	new OnScroll(vars.loremAll[i])
+// for (var i = 0; i < vars.loremAll.length; i++) {
+// 	new OnScroll(vars.loremAll[i])
+// }
+
+for (var i = 0; i < vars.allVisible.length; i++) {
+	new OnScroll(vars.allVisible[i])
 }
